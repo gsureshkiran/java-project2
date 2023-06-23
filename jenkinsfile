@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage('download'){
+            steps{
+                git 'https://github.com/gsureshkiran/java-project2.git'
+            }
+        }
+        stage('build'){
+            steps{
+                sh 'mvn package'
+            }
+        }
+        stage('docker build'){
+            steps{
+                sh 'docker build -t sureshkiran/todo .'
+            }
+        }
+    }
+}
