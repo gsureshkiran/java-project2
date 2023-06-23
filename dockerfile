@@ -19,4 +19,4 @@ COPY target/*.jar  /app
 EXPOSE 8081
 
 # Specify the command to run your application
-CMD ["java", "-jar", "app.jar"]
+CMD ["java", "-jar", "in28Minutes-first-webapp-0.0.1-SNAPSHOT.jar"]
