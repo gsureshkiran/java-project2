@@ -13,7 +13,7 @@ FROM openjdk:11
 WORKDIR /app
 
 # Copy the JAR file to the container
-COPY target/*.jar app
+COPY target/*.jar  /app
 
 # Expose the port your application will listen on
 EXPOSE 8081
